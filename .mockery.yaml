@@ -1,0 +1,12 @@
+config: 2
+
+packages:
+  service_discovery/pkg/client:
+    interfaces:
+      "*": {}
+  service_discovery/pkg/peerStore:
+    interfaces:
+      "*": {}
+  service_discovery/pkg/service:
+    interfaces:
+      "*": {}
