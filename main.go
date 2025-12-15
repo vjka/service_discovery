@@ -34,7 +34,6 @@ func main() {
 	mux.HandleFunc("/counter/increment", peerHandler.Increment)
 	mux.HandleFunc("/counter/replicate", peerHandler.Replicate)
 	mux.HandleFunc("/counter/count", peerHandler.Count)
-	log.Println("🚀 Server started on :8080")
 
 	if *peers != "" {
 		for _, peer := range strings.Split(*peers, ",") {
